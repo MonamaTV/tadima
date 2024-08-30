@@ -452,6 +452,12 @@ html {
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: normal;
+  scroll-snap-type: y mandatory;
+  /* scroll-padding: 30px; */
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 *, ::before, ::after{
@@ -562,10 +568,6 @@ html {
   --tw-contain-style:  ;
 }
 
-.fixed{
-  position: fixed;
-}
-
 .absolute{
   position: absolute;
 }
@@ -574,108 +576,36 @@ html {
   position: relative;
 }
 
-.top-10{
-  top: 2.5rem;
-}
-
-.-top-10{
-  top: -2.5rem;
-}
-
-.-top-5{
-  top: -1.25rem;
-}
-
-.-top-3{
-  top: -0.75rem;
-}
-
-.-top-1{
-  top: -0.25rem;
-}
-
-.top-5{
-  top: 1.25rem;
-}
-
-.top-0{
-  top: 0px;
-}
-
-.top-1{
-  top: 0.25rem;
-}
-
-.right-3{
-  right: 0.75rem;
-}
-
-.left-3{
-  left: 0.75rem;
-}
-
-.left-10{
-  left: 2.5rem;
-}
-
-.-left-10{
-  left: -2.5rem;
-}
-
-.top-3{
-  top: 0.75rem;
-}
-
-.-left-5{
-  left: -1.25rem;
+.sticky{
+  position: sticky;
 }
 
 .-left-2{
   left: -0.5rem;
 }
 
-.-left-3{
-  left: -0.75rem;
-}
-
-.top-2{
-  top: 0.5rem;
-}
-
 .left-4{
   left: 1rem;
 }
 
-.left-2{
-  left: 0.5rem;
+.top-1{
+  top: 0.25rem;
 }
 
-.left-1{
-  left: 0.25rem;
+.top-3{
+  top: 0.75rem;
 }
 
-.-left-4{
-  left: -1rem;
+.top-5{
+  top: 1.25rem;
 }
 
-.top-4{
-  top: 1rem;
-}
-
-.z-10{
-  z-index: 10;
-}
-
-.z-0{
+.-z-0{
   z-index: 0;
 }
 
 .z-40{
   z-index: 40;
-}
-
-.-z-0{
-  z-index: 0;
 }
 
 .my-4{
@@ -692,36 +622,16 @@ html {
   height: 2.5rem;
 }
 
-.h-screen{
+.h-\[100vh\]{
   height: 100vh;
-}
-
-.h-\[90vh\]{
-  height: 90vh;
-}
-
-.h-\[980vh\]{
-  height: 980vh;
-}
-
-.h-\[80vh\]{
-  height: 80vh;
-}
-
-.w-\[80vw\]{
-  width: 80vw;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
-.w-12{
-  width: 3rem;
 }
 
 .w-11{
   width: 2.75rem;
+}
+
+.w-\[80vw\]{
+  width: 80vw;
 }
 
 .flex-row{
@@ -742,30 +652,12 @@ html {
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
-.rounded-full{
-  border-radius: 9999px;
-}
-
 .rounded-none{
   border-radius: 0px;
 }
 
 .border{
   border-width: 1px;
-}
-
-.border-yellow-400{
-  --tw-border-opacity: 1;
-  border-color: rgb(250 204 21 / var(--tw-border-opacity));
-}
-
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-gray-300{
@@ -776,6 +668,11 @@ html {
 .bg-amber-500{
   --tw-bg-opacity: 1;
   background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .bg-red-500{
