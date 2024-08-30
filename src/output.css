@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
 /*
 ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
@@ -446,7 +448,13 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+html {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -500,7 +508,7 @@ video {
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,78 +562,57 @@ video {
   --tw-contain-style:  ;
 }
 
-.flex {
+.flex{
   display: flex;
 }
 
-.h-screen {
+.h-screen{
   height: 100vh;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
-.w-\[70vw\] {
-  width: 70vw;
-}
-
-.w-\[50vw\] {
-  width: 50vw;
-}
-
-.w-\[80vw\] {
+.w-\[80vw\]{
   width: 80vw;
 }
 
-.flex-row {
+.flex-row{
   flex-direction: row;
 }
 
-.items-center {
+.items-center{
   align-items: center;
 }
 
-.justify-center {
+.justify-center{
   justify-content: center;
 }
 
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-5xl {
+.text-5xl{
   font-size: 3rem;
   line-height: 1;
 }
 
-.text-sm {
+.text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.text-xl {
+.text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.italic {
+.italic{
   font-style: italic;
 }
 
-@media (min-width: 640px) {
-  .sm\:w-\[50vw\] {
+@media (min-width: 640px){
+  .sm\:w-\[50vw\]{
     width: 50vw;
   }
 }
