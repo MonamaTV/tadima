@@ -38,7 +38,7 @@
 </head>
 
 <body>
-  <nav class="my-4 flex flex-row justify-center items-center sticky top-5">
+  <nav class="z-100 my-4 flex flex-row justify-center items-center sticky  top-5">
     <div class="w-[80vw] sm:w-[50vw] space-y-1 relative">
       <img
         class="w-11 border border-gray-300 rounded-none z-40 relative"
@@ -80,7 +80,7 @@
       class="relative w-[80vw] sm:w-[50vw] border-s border-gray-200 dark:border-gray-700">
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white">
         </div>
         <time class="mb-1 text-sm text-gray-400 dark:text-gray-100">September 2023 - to date</time>
         <h3 class="text-lg text-gray-900 dark:text-white">
@@ -97,7 +97,7 @@
       </li>
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white">
         </div>
         <time class="mb-1 text-xs text-gray-400 dark:text-gray-100">June 2024 - Aug 2024</time>
         <h3 class="text-lg text-gray-900 dark:text-white">
@@ -116,7 +116,7 @@
       </li>
       <li class="ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white">
         </div>
         <time class="mb-1 text-xs text-gray-400 dark:text-gray-100">June 2023 - September 2023</time>
         <h3 class="text-lg text-gray-900 dark:text-white">
@@ -136,17 +136,110 @@
     </ol>
   </section>
   <section
-    class="bg-amber-500 flex flex-row justify-center items-center h-[100vh]">
-    <div class="w-[80vw] sm:w-[50vw] space-y-1">
-      <h1 class="text-5xl">Hi, I'm Tadima Monama</h1>
-      <h3 class="text-xl italic text-amber-800">
-        Software Engineer (noun • /ˈsɔːftwɛr ˌɛndʒɪˈnɪər/)
-      </h3>
-      <p class="text-sm">
-        Software engineering has turned me into a solution-driven individual
-        who always aims to solve problems using the best possible
-        methodologies.
-      </p>
+    class="bg-black text-white flex flex-row justify-center items-center h-[100vh]">
+
+    <div class="w-[80vw] sm:w-[50vw] grid grid-cols-1 sm:grid-cols-2 gap-y-4 flex-wrap-reverse justify-center gap-x-4 relative">
+      
+      <label class=" bg-[#1a1a1adf] flex justify-center" for="tw-modal">
+        <div class="p-5 gap-y-2 flex flex-col">
+          <h4 class="font-normal text-lg">Tadify</h4>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, hic!</p>
+          <div class="flex flex-row gap-x-2">
+            <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">Tailwind</small>
+          <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">NextJS</small>
+          <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">Spotify API</small>
+          </div>
+        </div>
+        <input type="checkbox" name="tw-modal" id="tw-modal" class="hidden peer">
+        <div for="tw-modal"
+          class="hidden transition peer-checked:flex flex-col peer-checked:[&>*]:translate-y-0 peer-checked:[&>*]:scale-100 absolute sm:-top-40 bg-white text-gray-800 sm:w-[80vw] sm:h-auto  top-0 h-screen w-screen ">
+          <img class="w-auto" src="./img/tadify.png" alt="">
+          <div class="px-10 py-3">
+            <h4 class="underline">Tadifdy</h4>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa veniam suscipit dolores, nisi quibusdam
+            natus. Minima dicta provident et eaque suscipit non quis veritatis quasi, error ducimus earum nisi facilis.
+          </p>
+          <a class="text-xs" href="">Live</a>
+          <a class="text-xs" href="">Repo</a>
+          </div>
+        </div>
+      </label>
+      <label class=" bg-[#1a1a1adf] flex justify-center" for="voteorloseit">
+        <div class="p-5 gap-y-2 flex flex-col">
+          <h4 class="font-normal text-lg">VoteOrLoseit</h4>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, hic!</p>
+          <div class="flex flex-row gap-x-2">
+            <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">Tailwind</small>
+          <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">NextJS</small>
+          <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">Spotify API</small>
+          </div>
+        </div>
+        <input type="checkbox" name="voteorloseit" id="voteorloseit" class="hidden peer">
+        <div for="voteorloseit"
+          class="hidden transition peer-checked:flex flex-col peer-checked:[&>*]:translate-y-0 peer-checked:[&>*]:scale-100 absolute mx-auto -top-40 bg-white text-gray-800 w-3/4">
+          <img class="w-auto" src="./img/voteorloseit.png" alt="">
+          <div class="px-10 py-3">
+            <h4 class="underline">VoteOrLoseit</h4>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa veniam suscipit dolores, nisi quibusdam
+            natus. Minima dicta provident et eaque suscipit non quis veritatis quasi, error ducimus earum nisi facilis.
+          </p>
+          <a class="text-xs" href="">Live</a>
+          <a class="text-xs" href="">Repo</a>
+          </div>
+        </div>
+      </label>
+      <label class=" bg-[#1a1a1adf] flex justify-center" for="tadjobs">
+        <div class="p-5 gap-y-2 flex flex-col">
+          <h4 class="font-normal text-lg">Tadjobs</h4>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, hic!</p>
+          <div class="flex flex-row gap-x-2">
+            <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">Tailwind</small>
+          <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">NextJS</small>
+          <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">Spotify API</small>
+          </div>
+        </div>
+        <input type="checkbox" name="tadjobs" id="tadjobs" class="hidden peer">
+        <div for="tadjobs"
+          class="hidden transition peer-checked:flex flex-col peer-checked:[&>*]:translate-y-0 peer-checked:[&>*]:scale-100 absolute mx-auto -top-40 bg-white text-gray-800 w-3/4">
+          <img class="w-auto" src="./img/tadjobs.png" alt="">
+          <div class="px-10 py-3">
+            <h4 class="underline">Tadjobs</h4>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa veniam suscipit dolores, nisi quibusdam
+            natus. Minima dicta provident et eaque suscipit non quis veritatis quasi, error ducimus earum nisi facilis.
+          </p>
+          <a class="text-xs" href="">Live</a>
+          <a class="text-xs" href="">Repo</a>
+          </div>
+        </div>
+      </label>
+      <label class=" bg-[#1a1a1adf] flex justify-center" for="wearetyping">
+        <div class="p-5 gap-y-2 flex flex-col">
+          <h4 class="font-normal text-lg">WeAreTyping</h4>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, hic!</p>
+          <div class="flex flex-row gap-x-2">
+            <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">Tailwind</small>
+          <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">NextJS</small>
+          <small class="text-xs rounded-md bg-amber-700 text-white px-2 py-1">Spotify API</small>
+          </div>
+        </div>
+        <input type="checkbox" name="wearetyping" id="wearetyping" class="hidden peer">
+        <div for="wearetyping"
+          class="hidden transition peer-checked:flex flex-col peer-checked:[&>*]:translate-y-0 peer-checked:[&>*]:scale-100 absolute mx-auto -top-40 bg-white text-gray-800 w-3/4">
+          <img class="w-auto" src="./img/wearetyping.png" alt="">
+          <div class="px-10 py-3">
+            <h4 class="underline">WeAreTyping</h4>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa veniam suscipit dolores, nisi quibusdam
+            natus. Minima dicta provident et eaque suscipit non quis veritatis quasi, error ducimus earum nisi facilis.
+          </p>
+          <a class="text-xs" href="">Live</a>
+          <a class="text-xs" href="">Repo</a>
+          </div>
+        </div>
+      </label>
     </div>
   </section>
 </body>
