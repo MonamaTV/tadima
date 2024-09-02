@@ -568,6 +568,10 @@ section {
   --tw-contain-style:  ;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -670,6 +674,10 @@ section {
 
 .left-0{
   left: 0px;
+}
+
+.top-10{
+  top: 2.5rem;
 }
 
 .-z-0{
